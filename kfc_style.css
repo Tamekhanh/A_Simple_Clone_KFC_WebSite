@@ -180,8 +180,9 @@ body {
 .cate-chose-ls {
     min-width: 500px;
     width: 1300px;
-    padding: 0px;
     padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     overflow: scroll;
     scrollbar-width: none;
     display: flex;
@@ -191,7 +192,7 @@ body {
     font-weight: 700;
     color: #7E7E7E;
     letter-spacing: 0.05px;
-    margin: 20px 0px 0px 0px;
+    margin: 20px 10px 0px 10px;
 }
 
 .cate-chose-ls li{
