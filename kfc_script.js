@@ -1,8 +1,8 @@
 
 let mybutton = document.getElementById("to-top-btn");
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () { scrollFunction() };
 function scrollFunction() {
-    if (document.body.scrollTop>20 || document.documentElement.scrollTop>20) {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         mybutton.style.display = "block"
     } else {
         mybutton.style.display = "none";
@@ -11,13 +11,13 @@ function scrollFunction() {
 
 function topFunction() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
+}
 
 let mybutton_navbar_r = document.getElementById("btn-to-right");
 let mybutton_navebar_l = document.getElementById("btn-to-left");
 let navbar_list = document.querySelector(".cate-chose-ls");
 
-function clickscrollx (a) {
+function clickscrollx(a) {
     console.log("scroll to " + a);
     let scrollto = navbar_list.querySelector(`.${a}`);
     if (scrollto) {
@@ -27,7 +27,7 @@ function clickscrollx (a) {
     }
 }
 let contain_list = document.querySelector(".sub-container");
-function clickscrollcontaint (a) {
+function clickscrollcontaint(a) {
     console.log("scroll to " + a);
     let scrollto = document.getElementById(a);
     if (scrollto) {
